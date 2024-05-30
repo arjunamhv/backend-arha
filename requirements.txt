@@ -1,4 +1,5 @@
-Flask==2.0.2
-Flask-Cors==4.0.1
-gunicorn==20.1.0
-sublist3r==1.0
+Flask
+Werkzeug
+Flask-Cors
+gunicorn
+sublist3r
