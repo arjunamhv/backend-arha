@@ -1,6 +1,11 @@
 # Menggunakan base image Python 3.9
 FROM python:3.9
 
+# Menginstal dependencies sistem menggunakan apt-get
+RUN apt-get update && \
+    apt-get install -y nmap nikto && \
+    apt-get clean
+
 # Menyimpan direktori kerja di /app dalam container
 WORKDIR /app
 
